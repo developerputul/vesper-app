@@ -41,7 +41,7 @@
  <!-------------top-navbar--------------------------------------------
   @include('website.components.navbar.navbar')
 
-  <h1 style="margin-top:100px; text-align:center">Home page</h1>
+  <h1 style="margin-top:100px; text-align:center">Website home page</h1>
  <!------------top-navbar----------------------------------------------
  @include('website.components.footer.footer')
 
