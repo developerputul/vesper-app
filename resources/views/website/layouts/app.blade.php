@@ -38,18 +38,18 @@
 </head>
 
 <body>
- <!-------------top-navbar--------------------------------------------
+   <!---------------------------top-navbar-------------------------------------------->
   @include('website.components.navbar.navbar')
-
-  <h1 style="margin-top:100px; text-align:center">Website home page</h1>
- <!------------top-navbar----------------------------------------------
- @include('website.components.footer.footer')
-
+      <!-- ======= Hero Section ======= -->
+  <!-- End Hero -->
   @yield('content')
+
+   <!-------------------------footer---------------------------------------------->
+ @include('website.components.footer.footer')
 
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
-  <!-- Vendor JS Files -------------------------------------
+  <!-- Vendor JS Files ------------------------------------->
   <script src="{{asset('website/assets/vendor/purecounter/purecounter_vanilla.js')}}"></script>
   <script src="{{asset('website/assets/vendor/aos/aos.js')}}"></script>
   <script src="{{asset('website/assets/vendor/bootstrap/js/bootstrap.bundle.min.js')}}"></script>

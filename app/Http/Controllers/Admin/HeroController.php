@@ -1,18 +1,18 @@
 <?php
 
-namespace App\Http\Controllers\Website;
+namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 
-class HomeController extends Controller
+class HeroController extends Controller
 {
     /**
      * Display a listing of the resource.
      */
     public function index()
     {
-        return view ('website.home.index');
+       return view('admin.hero.index');
     }
 
     /**
@@ -20,7 +20,7 @@ class HomeController extends Controller
      */
     public function create()
     {
-        //
+        return view('admin.hero.create');
     }
 
     /**
@@ -28,7 +28,7 @@ class HomeController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        echo "Heelo";
     }
 
     /**

@@ -3,6 +3,7 @@
 use App\Http\Controllers\Admin\DashboardController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\Website\HomeController;
+use App\Http\Controllers\Admin\HeroController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -23,6 +24,10 @@ Route::get('/', [HomeController::class, 'index'])->name('website.home');
 Route::middleware(['auth', 'verified'])->group(function () {
 #dashboard
 Route::get('/dashboard',[DashboardController::class, 'index'])->name('dashboard');
+#hero
+Route::get('/hero',[HeroController::class, 'index'])->name('hero');
+Route::get('/hero/create',[HeroController::class, 'create'])->name('hero.create');
+Route::post('/hero/store',[HeroController::class, 'store'])->name('hero.store');
 
 });
 
